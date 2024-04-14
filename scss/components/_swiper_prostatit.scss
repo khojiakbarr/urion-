@@ -1,0 +1,219 @@
+//? --------------------------Card--------------------
+.prostatit_card {
+  height: 438px;
+  max-width: 319px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 19px 16px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+
+  p {
+    max-width: 275px;
+    color: #331b3b;
+    text-align: center;
+    font-family: "Hind Vadodara";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal; /* 32.952px */
+    letter-spacing: normal;
+    text-transform: uppercase;
+  }
+}
+
+.card_image {
+  img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+//?---------------------------BG--------------------
+.prostatit_wrapper {
+  height: 775px;
+}
+.prostatit_bg {
+  position: absolute;
+  top: 116px;
+  left: 0;
+  right: calc(50vw - 370px);
+  height: 636px;
+  background-color: rgba(58, 89, 108, 0.7);
+  border-top-right-radius: 400px;
+  z-index: 2;
+
+  .next {
+    position: absolute;
+    right: 90px;
+    bottom: 44px;
+    &:nth-child(even) {
+      opacity: 0;
+    }
+  }
+  .prev {
+    position: absolute;
+    right: 178px;
+    bottom: 45px;
+    z-index: 2;
+    &:nth-child(even) {
+      opacity: 0;
+    }
+  }
+}
+
+//?-----------------------title-------------------------
+.prostatit_title {
+  display: inline-block;
+  font-size: 48px;
+  position: relative;
+  z-index: 4;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 191px;
+    width: 159px;
+    height: 20px;
+    background-color: #fdc221;
+  }
+}
+
+//?------------------------swiper----------------------------
+.prostatit {
+  position: relative;
+}
+.swiper-slide {
+  .prostatit_card {
+    width: 100%;
+  }
+}
+
+.prostata_swiper {
+  position: absolute;
+  width: 60vw;
+  left: 15px;
+  margin: 0;
+  margin-top: 120px;
+  z-index: 3;
+}
+
+//? -----------------------------Mobile-------------------------
+@include mobile() {
+  .prostatit_card p {
+    font-size: 20px;
+  }
+  .prostatit_title {
+    padding: 15px;
+    font-size: 25px;
+    z-index: 4;
+    margin-bottom: 20px;
+
+    &::after {
+      width: 100px;
+      height: 10px;
+      bottom: 0px;
+      left: 98px;
+    }
+  }
+  .prostatit_bg {
+    top: 0;
+    background-color: #ecf7ff;
+    right: calc(50vw - 178px);
+    right: 0;
+    height: 713px;
+    border-top-right-radius:0px;
+    &::before {
+      border: 3px solid black;
+    }
+    &::after {
+      border: 3px solid black;
+    }
+  }
+  .prostata_swiper {
+    width: 90vw;
+    margin-top: 34px;
+    // padding-left: 40px;
+  }
+
+  .next {
+    position: absolute;
+    right: 90px;
+    bottom: 44px;
+    &:nth-child(even) {
+      opacity: 1 !important;
+    }
+  }
+  .prev {
+    position: absolute;
+    right: 178px;
+    bottom: 45px;
+    z-index: 2;
+    &:nth-child(even) {
+      opacity: 1 !important;
+      z-index: 4;
+    }
+  }
+}
+
+//? -----------------------------Tablet-----------------
+@include tablet() {
+  .prostata_swiper {
+    padding-left: 80px;
+  }
+  .prostatit_title {
+    padding: 15px;
+    font-size: 46px;
+    z-index: 4;
+    margin-bottom: 10px;
+    padding-top: 30px;
+
+    &::after {
+      bottom: -8px;
+      left: 188px;
+      height: 15px;
+    }
+  }
+
+  .prostatit_bg {
+    top: 0;
+    right: 0;
+    height: 755px;
+    background-color: #ecf7ff;
+    &::before {
+      border: 3px solid black;
+    }
+    &::after {
+      border: 3px solid black;
+    }
+  }
+  .prostata_swiper {
+    width: 80vw;
+    margin-top: 74px;
+  }
+
+  .next {
+    position: absolute;
+    right: 90px;
+    bottom: 44px;
+    &:nth-child(even) {
+      opacity: 1 !important;
+    }
+  }
+  .prev {
+    position: absolute;
+    right: 178px;
+    bottom: 45px;
+    z-index: 2;
+    &:nth-child(even) {
+      opacity: 1 !important;
+      z-index: 4;
+    }
+  }
+}
+
+//? -----------------------------Labtop--------------------------

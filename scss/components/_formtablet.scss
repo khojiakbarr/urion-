@@ -1,0 +1,177 @@
+.form-tablet {
+  background-image: url(../images/bg_tablet.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 42%;
+  display: none;
+
+  @include tablet() {
+    margin-top: 40px;
+    background-position: right top -58px;
+    display: block;
+  }
+  @include mobile() {
+    margin-top: 40px;
+    background-position: right top -58px;
+    display: block;
+  }
+}
+
+.form_title_text {
+  margin-top: 100px;
+  color: #3ea148;
+  font-weight: 700;
+  font-size: 55px;
+  @include mobile() {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+.formControl {
+  margin: 150px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include mobile() {
+    gap: 15px;
+    margin-top: 20px;
+  }
+}
+
+.form_input {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 20px;
+
+  @include mobile() {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+//? text and tel input
+.input_control {
+  width: 100%;
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  background-color: #ececec;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+
+  @include mobile() {
+    padding: 12px 20px;
+  }
+  &::placeholder {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Hind Vadodara", sans-serif;
+  }
+}
+
+.input_email {
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  background-color: #ececec;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+
+  &::placeholder {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Hind Vadodara", sans-serif;
+  }
+}
+
+.ball {
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  background-color: #ececec;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+
+  &::placeholder {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Hind Vadodara", sans-serif;
+  }
+}
+
+.form_info {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  @include mobile() {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+.btn_submit {
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px 60px;
+  background-color: #3ea148;
+  @include mobile() {
+    padding: 15px 50px;
+  }
+}
+
+.form_info_text {
+  max-width: 425px;
+  font-size: 13px;
+  @include mobile() {
+    font-size: 11px;
+  }
+}
+
+@include mobile() {
+  .icon_tabletka {
+    max-width: 340px;
+  }
+}
+
+.tablet_info {
+  font-weight: 600;
+  max-width: 625px;
+  margin: 0 auto;
+  .order {
+    margin-top: 40px;
+    font-weight: 500;
+  }
+}
+
+.tablet_info_title {
+  font-size: 20px;
+}
+
+.info_title {
+  margin-top: -10px;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.tablet_text {
+  margin-top: 30px;
+  color: #331b3ba2;
+  font-weight: 400px;
+  font-size: 17px;
+}
