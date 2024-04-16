@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>URION</title>
+    <link rel="icon" type="image/x-icon" href="/images/jp_dori-modal.png">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    
   </head>
 
   <body>
@@ -47,9 +50,9 @@
       <section class="hero">
         <div class="container hero_wrapper">
           <div class="hero_item">
-            <div class="hero_anim">
-              <h3 class="hero_title">
-                <span>SURUNKALI</span><br />
+            <div data-aos="zoom-in" class="hero_anim">
+              <h3  class="hero_title">
+                <span >SURUNKALI</span><br />
                 PROSTATITNI DAVOLASH
               </h3>
               <h4 class="about">
@@ -126,7 +129,8 @@
         </div>
         <!-- hero card two -->
         <div class="container">
-          <div class="hero_info_two">
+          <div data-aos="fade-up"
+          data-aos-duration="2000"  class="hero_info_two">
             <div class="hero_cards_two">
               <h4>Prostataga Qarshi</h4>
               <img src="./images/icon_invalid.svg" alt="" />
@@ -162,7 +166,8 @@
        <a href="#door"> <img  src="./images/BUTTON.png" ></a>
       </div>
       <!-- new From -->
-      <section class="newForm-sec">
+      <section data-aos="fade-up"
+      data-aos-duration="2000" class="newForm-sec">
         <div class="container">
           <h2 class="newFrom-text">
             DIQQAT! <br />
@@ -252,7 +257,8 @@
         </div>
       </section>
       <!--End of new From -->
-      <section class="prostatit">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="prostatit">
         <div class="container prostatit_wrapper">
           <center>
             <h3 class="prostatit_title">PROSTATIT ALOMATLARI:</h3>
@@ -360,7 +366,8 @@
         </div>
       </center>
 
-      <section class="swip__right">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="swip__right">
         <div class="swip__right-wrapper">
           <h2 class="swip__title">
             AGAR HOZIROQ DAVOLANISHNI BOSHLAMASANGIZ !
@@ -456,7 +463,8 @@
       </section>
       <!-- end of swip -->
       <!-- Door -->
-      <section class="door" id="door">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="door" id="door">
         <div class="container">
           <h2 class="door-title">
             КАЙСИ ЭШИК ОРКАСИДА 100% ЧЕГИРМА БОРЛИГИНИ ТОПИНГ!
@@ -503,7 +511,8 @@
       </section>
       <!--End of Door -->
       <!-- Cure -->
-      <section class="cure">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="cure">
         <div class="container">
           <div class="cure_head">
             <h2>DAVOLASHNI XOZIROQ <span>BOSHLANG</span></h2>
@@ -535,7 +544,8 @@
       <!-- end of Cure -->
 
       <!-- Healing -->
-      <section class="healing">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="healing">
         <div class="container">
           <center class="healing_tile">
             <h3>
@@ -590,7 +600,8 @@
       </section>
       <!--End of Healing -->
       <!-- Composition -->
-      <section class="composition">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="composition">
         <div class="container">
           <center class="composition_title">
             <h3>URION PREPARATINING <span>TARKIBI:</span></h3>
@@ -646,12 +657,14 @@
       <!--End of Composition -->
 
       <!-- Power -->
-      <center>
+      <center data-aos="fade-up"
+      data-aos-duration="2000" >
         <h2 class="power_title">
           URION <span>JINSIY QUVVATNI</span> OSHIRISHI
         </h2>
       </center>
-      <section class="power">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="power">
         <div class="container">
           <h3 class="power_text">
             Prostatit uchun <span>URION</span> virtusin ogiz orgali yuborish
@@ -694,7 +707,8 @@
       </section>
       <!--End of Power -->
       <!-- Weak -->
-      <section class="weak">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="weak">
         <div class="container">
           <center>
             <h3 class="weak_title"><span>Zaif</span> quvatning oqibatlari</h3>
@@ -819,7 +833,8 @@
           </h2>
         </center>
       </div>
-      <section class="profi">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="profi">
         <center>
           <h2 class="profi_title">PROFFESORLAR FIKRI</h2>
         </center>
@@ -947,7 +962,8 @@
       <!--End of profi -->
 
       <!-- swiper otvis -->
-      <section class="otvis">
+      <section data-aos="fade-up"
+      data-aos-duration="2000"  class="otvis">
         <div class="container">
           <div class="otvis_title">
             <h2><span>OTZIVLAR</span> MIJOZLARIMIZ JAVOBI</h2>
@@ -1172,5 +1188,9 @@
     <script src="./js/main.js"></script>
     <script src="./js/newForm.js"></script>
     <script src="./js/door.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
