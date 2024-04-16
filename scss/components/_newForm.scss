@@ -1,0 +1,90 @@
+.newForm-sec {
+  // position: relative;
+  background-color: #00b0c75c;
+  border-top-right-radius: 345px;
+  padding: 30px 0 30px 0px;
+  @include mobile() {
+    border-top-right-radius: 0px;
+  }
+}
+
+.newFrom-text {
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  @include text(20px);
+  border-radius: 400px;
+  background: #000;
+  & > span {
+    color: red;
+  }
+  @include tablet() {
+    @include text(19px);
+  }
+  @include mobile() {
+    @include text(15px);
+    padding: 10px 15px;
+  }
+}
+
+.form-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.new-form {
+  display: flex;
+  gap: 20px;
+  @include mobile() {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.newForm-text {
+  @include text();
+  cursor: pointer;
+  & > input {
+    margin-right: 5px;
+    transform: scale(1.5);
+  }
+  @include tablet() {
+    @include text(20px);
+  }
+  @include mobile() {
+    @include text(14px);
+  }
+}
+
+.newFrom-open {
+  display: flex;
+}
+.btn-newForm {
+  margin-top: 20px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  background: red;
+  border-radius: 10px;
+  @include text(16px);
+  transition: all 0.4s ease;
+  &:hover {
+    color: rgb(212, 210, 210);
+    cursor: pointer;
+    background: rgb(187, 18, 18);
+    transform: scale(1.1);
+  }
+}

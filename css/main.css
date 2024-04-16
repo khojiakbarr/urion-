@@ -325,6 +325,11 @@ input:focus {
   padding-bottom: 250px;
   overflow-x: hidden;
 }
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
 
 .hero_wrapper {
   padding-top: 100px;
@@ -3277,4 +3282,234 @@ input:focus {
   100% {
     transform: translateY(0px);
   }
+}
+.newForm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.main-modal {
+  padding: 50px;
+  background: white;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 25px 12px rgba(0, 0, 0, 0.522);
+}
+@media (max-width: 768px) {
+  .main-modal {
+    padding: 20px;
+  }
+}
+
+.modalTile {
+  text-align: center;
+  background: #000;
+  color: red;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 400;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modalTile {
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 768px) {
+  .modalTile {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.modalInfo {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .modalInfo {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+.btn-close {
+  margin-top: 15px;
+  color: white;
+  background: #000;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  transition: all 0.4s ease;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .btn-close {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+.btn-close:hover {
+  cursor: pointer;
+  background: #000;
+  color: red;
+  transform: scale(1.1);
+}
+.btn-close:active {
+  transform: scale(0.9);
+}
+
+.btn-line {
+  display: flex;
+  justify-content: end;
+}
+
+.newForm-sec {
+  background-color: rgba(0, 176, 199, 0.3607843137);
+  border-top-right-radius: 345px;
+  padding: 30px 0 30px 0px;
+}
+@media (max-width: 768px) {
+  .newForm-sec {
+    border-top-right-radius: 0px;
+  }
+}
+
+.newFrom-text {
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 400px;
+  background: #000;
+}
+.newFrom-text > span {
+  color: red;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .newFrom-text {
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  .newFrom-text {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 15px;
+  }
+}
+
+.form-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.new-form {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .new-form {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.newForm-text {
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.newForm-text > input {
+  margin-right: 5px;
+  transform: scale(1.5);
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .newForm-text {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 768px) {
+  .newForm-text {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.newFrom-open {
+  display: flex;
+}
+
+.btn-newForm {
+  margin-top: 20px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  background: red;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+.btn-newForm:hover {
+  color: rgb(212, 210, 210);
+  cursor: pointer;
+  background: rgb(187, 18, 18);
+  transform: scale(1.1);
+}
+
+.door-title {
+  padding: 10px 30px;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  background: #000;
+  border-radius: 180px;
+}
+
+.door-info {
+  margin: 40px 0px 40px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 700;
+}
+.door-info > span {
+  color: red;
+}
+
+.main-door {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }

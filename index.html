@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>URION</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -157,11 +158,94 @@
       </section>
       <!--End of Hero -->
       <!-- new From -->
-      <section>
-        <h2>
-          DIQQAT! MUHIM SO’ROVNOMA AGARDA USHBU ALOMATLARDAN BITTA BO’LSA HAM
-          SEZSANGIZ <span>DARHOL</span> MUALAJANI BOSHLANG
-        </h2>
+      <section class="newForm-sec">
+        <div class="container">
+          <h2 class="newFrom-text">
+            DIQQAT! <br />
+            MUHIM SO’ROVNOMA AGARDA USHBU ALOMATLARDAN BITTA BO’LSA HAM
+            SEZSANGIZ <span class="text-red">DARHOL</span> MUALAJANI BOSHLANG
+          </h2>
+          <!-- ? Modal -->
+          <div class="newForm-modal" id="newFormModal">
+            <div class="main-modal">
+              <h2 id="modalTile" class="modalTile">SIZNING NATIJANGIZ</h2>
+              <p id="modalInfo" class="modalInfo">
+                O'rtacha ehtimoldan past Sizda prostatit bor yoki yo'qligini
+                aniq aytish mumkin emas. Ammo, agar siz allaqachon 30 yoshda
+                bo'lsangiz, Adenofrinni parvarish qilish kursi bilan prostata
+                bezingizga g'amxo'rlik qilishingiz kerak. Bu ushbu makkor
+                kasallikning yuzaga kelishi mumkin bo'lgan salbiy asoratlarining
+                oldini olishga yordam beradi.Ehtimollik o'rtacha darajadan past
+                Sizda prostatit bor yoki yo'qligini aniq aytish mumkin emas.
+                Ammo, agar siz allaqachon 30 yoshda bo'lsangiz, Adenofrinni
+                parvarish qilish kursi bilan prostata bezingizga g'amxo'rlik
+                qilishingiz kerak. Bu ushbu makkor kasallikning mumkin bo'lgan
+                salbiy asoratlarini oldini olishga yordam beradi.
+              </p>
+              <div class="btn-line">
+                <button onclick="toggleModal()" class="btn-close">
+                  Yopish
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ? Form-->
+          <form id="newForm" onsubmit="submitForm(event)">
+            <div class="new-form">
+              <div class="form-right">
+                <label for="zaif" class="newForm-text">
+                  <input type="checkbox" id="zaif" value="1" />
+                  Zaif erektsiya
+                </label>
+                <label for="Qorinning" class="newForm-text">
+                  <input type="checkbox" id="Qorinning" value="1" />
+                  Qorinning pastki qismida, moyaklardagi og'riq
+                </label>
+                <label for="Jinsiy" class="newForm-text">
+                  <input type="checkbox" id="Jinsiy" value="1" />
+                  Jinsiy aloqani kamayishi
+                </label>
+                <label for="Haftada" class="newForm-text">
+                  <input type="checkbox" id="Haftada" value="1" />
+                  Haftada 3 martadan kam jinsiy aloqa
+                </label>
+                <label for="Og'riqli" class="newForm-text">
+                  <input type="checkbox" id="Og'riqli" value="1" />
+                  Og'riqli bo'shatish
+                </label>
+              </div>
+
+              <div class="form-left">
+                <label for="Tualetga" class="newForm-text">
+                  <input type="checkbox" id="Tualetga" value="1" />
+                  Tualetga tungi sayohatlar
+                </label>
+                <label for="Majburiy" class="newForm-text">
+                  <input type="checkbox" id="Majburiy" value="1" />
+                  Majburiy ravishda siydik chiqarish
+                </label>
+                <label for="Surunkali" class="newForm-text">
+                  <input type="checkbox" id="Surunkali" value="1" />
+                  Surunkali charchoq, depressiya
+                </label>
+                <label for="Siydik" class="newForm-text">
+                  <input type="checkbox" id="Siydik" value="1" />
+                  Siydik chiqarishning qiyinligi (tomchilab)
+                </label>
+                <label for="chiqarishda" class="newForm-text">
+                  <input type="checkbox" id="chiqarishda" value="1" />
+                  Siydik chiqarishda yoqimsiz hissiyotlar </label
+                ><label for="Boshqalar" class="newForm-text">
+                  <input type="checkbox" id="Boshqalar" value="1" />
+                  Boshqalar...
+                </label>
+              </div>
+            </div>
+            <button class="btn-newForm" type="submit" onclick="toggleModal()">
+              Natijasi bilan tanshing
+            </button>
+          </form>
+        </div>
       </section>
       <!--End of new From -->
       <section class="prostatit">
@@ -261,99 +345,6 @@
         </div>
       </section>
       <!-- End of Swiper -->
-      <!-- form Tablet -->
-      <!-- <section class="form-tablet">
-        <div class="container">
-          <div class="links_tablet">
-            <a href="#"
-              ><img src="./images/icon_youTube.svg" alt="YouTube"
-            /></a>
-            <a href="#"
-              ><img src="./images/icon_faceBook.svg" alt="facebook"
-            /></a>
-            <a href="#"> <img src="./images/icon_TG.svg" alt="Telegram" /> </a>
-            <a href="#"
-              ><img src="./images/icon_insta.svg" alt="Instagram"
-            /></a>
-          </div>
-
-          <div class="form_title">
-            <h3 class="form_title_text">Остались вопросы?</h3>
-          </div>
-          <form id="form_control" class="formControl">
-            <div class="form_input">
-              <input class="input_control" type="text" placeholder="Ваше имя" />
-              <input
-                class="input_control"
-                type="tel"
-                placeholder="Ваш телефон"
-              />
-            </div>
-            <input class="input_email" type="email" placeholder="Ваш email" />
-            <textarea
-              class="ball"
-              name="comment"
-              cols="30"
-              rows="3"
-              placeholder="Ваш вопрос"
-            ></textarea>
-
-            <div class="form_info">
-              <button class="btn_submit">Отправить</button>
-              <p class="form_info_text">
-                Нажимая «Отправить», я соглашаюсь c обработкой персональных
-                данных на условиях <a href="#">Политики конфиденциальности.</a>
-              </p>
-            </div>
-          </form>
-          <center>
-            <img
-              class="icon_tabletka"
-              src="./images/jp_tablet.svg"
-              alt="image"
-            />
-          </center>
-          <div class="tablet_info">
-            <h3 class="tablet_info_title">
-              SURUNKALI PROSTATIT VA PROSTATA BEZI ADENOMASINI
-            </h3>
-            <h2 class="info_title">DAVOLASH</h2>
-            <p class="tablet_text">
-              98% shifo topgan bemorlar tomonidan klinik isbotlangan
-              samaradorlik
-            </p>
-            <p class="tablet_text">
-              Rossiya NanoRF Rossiya Shifokorlar Assotsiatsiyasi tomonidan
-              tasdiqlangan
-            </p>
-            <p class="tablet_text">
-              40 dan oshgan yoshdagi erkaklar uchun eng samarali preparat deb
-              tan olingan
-            </p>
-            <p class="tablet_text">
-              Yuqori texnologiyalar va 100% kimyoviy moddalarsiz ekologik toza
-              komponentlar
-            </p>
-            <a class="order" href="#footer">buyurtma qoldiring</a>
-          </div>
-          <div
-            class="links_tablet"
-            style="display: flex; justify-content: flex-end; margin-top: 50px"
-          >
-            <a href="#"
-              ><img src="./images/icon_youTube.svg" alt="YouTube"
-            /></a>
-            <a href="#"
-              ><img src="./images/icon_faceBook.svg" alt="facebook"
-            /></a>
-            <a href="#"> <img src="./images/icon_TG.svg" alt="Telegram" /> </a>
-            <a href="#"
-              ><img src="./images/icon_insta.svg" alt="Instagram"
-            /></a>
-          </div>
-        </div>
-      </section> -->
-      <!--End of form Tablet -->
       <!-- Swip -->
       <center>
         <div class="swp_title">
@@ -460,7 +451,41 @@
         </div>
       </section>
       <!-- end of swip -->
-
+      <!-- Door -->
+      <section class="door">
+        <div class="container">
+          <h2 class="door-title">
+            КАЙСИ ЭШИК ОРКАСИДА 100% ЧЕГИРМА БОРЛИГИНИ ТОПИНГ!
+          </h2>
+          <h3 class="door-info">
+            ALBATTA KO’P KOMPANIYALAR BU HAQIDA KO’P AYTADI AMMO
+            <span>FIRIBGARLIKLAR</span> HAM TALAYGINA. BIZNING KOMPANIYAMIZ
+            TOMONIDAN USHBU KASALLIKLARNI
+            <span>MUKAMMAL VA A’LO DARAJADA</span> BAJARISH UCHUN VA USHBU
+            KASALIK SIZDA MAVJUD BO’LSA BIZ SIZGA
+            <span>100%LIK CHEGIRMANI</span> YUTIB OLISH IMKONIYATINI BERAMIZ 3
+            ESHIKDAN 1NI TANLANG VA OMADINGIZ SINAB KO’RING. omad!!!
+          </h3>
+          <div class="main-door">
+            <img
+              class="door-images"
+              src="./images/jp_door_green.png"
+              alt="door"
+            />
+            <img
+              class="door-images"
+              src="./images/jp_door_green.png"
+              alt="door"
+            />
+            <img
+              class="door-images"
+              src="./images/jp_door_green.png"
+              alt="door"
+            />
+          </div>
+        </div>
+      </section>
+      <!--End of Door -->
       <!-- Cure -->
       <section class="cure">
         <div class="container">
@@ -1129,5 +1154,7 @@
     <!-- axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/newForm.js"></script>
+    <script src="./js/door.js"></script>
   </body>
 </html>

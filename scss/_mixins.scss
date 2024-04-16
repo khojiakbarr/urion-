@@ -5,13 +5,18 @@
 }
 
 @mixin tablet() {
-  @media (min-width: 768px) and (max-width:1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin media($min, $max) {
-  @media (min-width: $min) and (max-width:$max) {
+  @media (min-width: $min) and (max-width: $max) {
     @content;
   }
+}
+
+@mixin text($size: 24px, $weight: 700) {
+  font-size: $size;
+  font-weight: $weight;
 }
