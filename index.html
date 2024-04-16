@@ -157,6 +157,10 @@
         </div>
       </section>
       <!--End of Hero -->
+      <!-- !buttonn icon -->
+      <div class="icon_btn">
+       <a href="#door"> <img  src="./images/BUTTON.png" ></a>
+      </div>
       <!-- new From -->
       <section class="newForm-sec">
         <div class="container">
@@ -452,7 +456,7 @@
       </section>
       <!-- end of swip -->
       <!-- Door -->
-      <section class="door">
+      <section class="door" id="door">
         <div class="container">
           <h2 class="door-title">
             КАЙСИ ЭШИК ОРКАСИДА 100% ЧЕГИРМА БОРЛИГИНИ ТОПИНГ!
@@ -466,22 +470,34 @@
             <span>100%LIK CHEGIRMANI</span> YUTIB OLISH IMKONIYATINI BERAMIZ 3
             ESHIKDAN 1NI TANLANG VA OMADINGIZ SINAB KO’RING. omad!!!
           </h3>
+          <!-- ?modal door -->
+          <div class="door-modal">
+            <div class="main-door-modal">
+              <img src="./images/jp_dori-modal.png" alt="dori" />
+              <p class="doorModalText">
+                TABRIKLAYMIZSIZ 100%LIKCHEGIRMA ASOSIDABEPUL HARID QILISHINGIZ
+                MUMKUN
+              </p>
+              <a class="btn-modal" onclick="closeModal()" href="#footer">
+                yopish
+              </a>
+            </div>
+          </div>
+          <!--? doors -->
           <div class="main-door">
-            <img
-              class="door-images"
-              src="./images/jp_door_green.png"
-              alt="door"
-            />
-            <img
-              class="door-images"
-              src="./images/jp_door_green.png"
-              alt="door"
-            />
-            <img
-              class="door-images"
-              src="./images/jp_door_green.png"
-              alt="door"
-            />
+            <div class="door-border">
+              <img class="door-images" src="./images/jp_door.jpg" alt="door" />
+            </div>
+            <div class="door-border">
+              <img
+                class="door-images"
+                src="./images/door blue.png"
+                alt="door"
+              />
+            </div>
+            <div class="door-border">
+              <img class="door-images" src="./images/door red.png" alt="door" />
+            </div>
           </div>
         </div>
       </section>
@@ -1120,7 +1136,7 @@
                     class="inp"
                     id="name"
                     placeholder="Ваше имя"
-                    autocomplete="none"
+                    autocomplete="off"
                     required
                   />
                   <input
@@ -1128,7 +1144,7 @@
                     class="input"
                     id="input"
                     placeholder="Ваш телефон"
-                    autocomplete="none"
+                    autocomplete="off"
                     required
                   />
                 </div>
