@@ -52,10 +52,11 @@
   transform: scale(1.03);
 
   @include mobile() {
-    transform: scale(1.05);
+    transform: scale(1.06);
+
   }
   &:hover {
-    transform: rotateY(-30deg) scale(1.03);
+    transform: rotateY(-30deg) scale(1.06);
   }
 }
 
@@ -66,12 +67,19 @@
   perspective: 1000px;
   &:last-child {
     border: 10px solid #ff0000;
+    @include mobile() {
+      border: 5px solid #ff0000;
+    }
   }
   &:nth-child(2) {
     border: 10px solid #002bff;
+    @include mobile() {
+      border: 5px solid #002bff;
+    }
   }
   @include mobile() {
     width: 100px;
+    border: 5px solid #00ff47;
   }
 }
 

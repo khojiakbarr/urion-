@@ -3148,6 +3148,9 @@ input:focus {
   font-family: Hind Vadodara;
   color: #ff0000;
 }
+.footer .wrapper .left .box p {
+  margin: 10px 0;
+}
 .footer .wrapper .right {
   display: flex;
   flex-direction: column;
@@ -3583,11 +3586,11 @@ input:focus {
 }
 @media (max-width: 768px) {
   .door-images {
-    transform: scale(1.05);
+    transform: scale(1.06);
   }
 }
 .door-images:hover {
-  transform: rotateY(-30deg) scale(1.03);
+  transform: rotateY(-30deg) scale(1.06);
 }
 
 .door-border {
@@ -3599,12 +3602,23 @@ input:focus {
 .door-border:last-child {
   border: 10px solid #ff0000;
 }
+@media (max-width: 768px) {
+  .door-border:last-child {
+    border: 5px solid #ff0000;
+  }
+}
 .door-border:nth-child(2) {
   border: 10px solid #002bff;
 }
 @media (max-width: 768px) {
+  .door-border:nth-child(2) {
+    border: 5px solid #002bff;
+  }
+}
+@media (max-width: 768px) {
   .door-border {
     width: 100px;
+    border: 5px solid #00ff47;
   }
 }
 
